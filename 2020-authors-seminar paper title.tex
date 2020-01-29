@@ -1,0 +1,172 @@
+\documentclass[a4paper, 11pt]{article}
+
+% Language and encoding.
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+% Set fonts (in order to deal with umlauts).
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Sets page size and margins.
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=3cm, right=3cm, marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{url}
+
+% Lorem Ipsum package to generate dummy text. Simply remove it.
+\usepackage{lipsum}
+
+% Creative Commons license package.
+\usepackage[
+    type={CC},
+    modifier={by-nc-sa},
+    version={4.0},
+]{doclicense}
+
+% hyperref package to color links.
+%\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Todo notes.
+%\usepackage[textsize=footnotesize, backgroundcolor=yellow!10, linecolor=gray!35]{todonotes} 
+
+\title{Ethical Issues of Open Medical Data}
+
+\begin{document}
+
+\date{\today}
+\author{Sarah Hanna Fischer and Lisa Müllner}
+\maketitle
+
+
+\begin{abstract}
+\end{abstract}
+
+\section{Introduction} \label{sec:intro}
+In recent years the topics "open data" and "big data" have gained increasing attention in many different areas. There exists a whole movement that deals with opening up various kinds of data and one of the areas where their is a wish for opening up the data is the health care sector. \cite{kitchin2014dataRevolution} 
+
+There is a huge potential of the already existing amount of medical data that is gathered every day. For example, it could help to make more new scientific discoveries, it would lower the research costs, because no redundant research needs to be done and many more. However, most of this data is due to the fact that medical data is very delicate not publicly available which makes it impossible to exploit the potential of this data. The main reasons for this are ethical issues that make it that difficult to open up the data. Therefore, the goal of this paper is to give a short overview of the current state of open medical data and to mainly discuss the ethical issues that arise when opening up medical data. 
+
+We start our paper by providing first some general information and definitions of the topic related areas in Section \ref{sec:definitions}. We will continue by presenting some publicly available data sources of medical data in Section \ref{sec:dataSources}. Afterward, the potential and importance of open medical data is shortly discussed in Section \ref{sec:importance}. Finally, some of the ethical issues that need to be considered when dealing with open medical data are presented in Section \ref{sec:ethicalIssues} and then we sum up our results in Section \ref{sec:conclusion}.
+
+\section{Definitions}\label{sec:definitions}
+In this section, we provide some general information and definitions of the topic related areas like Open Data, Data Ethics, Big Health Data and Open Medical Data. 
+
+\subsection{Open Data}
+\begin{quote}
+    "Open data is data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and sharealike." \cite{whatIsOpenData}
+\end{quote}
+Of course the words like "freely used" or "re-used and redistribution" can be understood differently by different people. Therefore the different aspects of the definition are specified in more detail to make sure that everyone knows exactly when data is open data and when not. The first aspect is "freely used" and this means that the data is of course available as a whole and it does not cost anything except for reproduction costs that are reasonable. 
+The next aspect is "re-used and redistributed" which means that the data must be published under conditions that allows everyone to re-use and redistribute it and to combine it with other datasets. 
+The last very important aspect is that the data needs to be accessible for everyone which means that there is no discrimination against specific groups or people or fields of endeavour. \cite{whatIsOpenData}
+
+Something also important regarding "open data" is that there exists a movement, called "open data movement" that goal is to open up data and to provide tools that make the analysis of the data easier. Because sometimes even if data is freely available the data is so complex that special tools or software is needed to be able to analyse it. \cite{kitchin2014dataRevolution}
+
+\subsection{Big Health Data}
+Big health data means the sum of all the data that is produced, gathered and electronically stored during the daily routines of modern health care systems as well as health data that is collected by wearable devices regardless if it is open or not. There is a high potential of improving patient care with this huge amount of data but currently there is a lack of tools that are able to properly handle the data. \cite{schneeweiss2014learning} \cite{Kostkova_et_al_2016}
+
+\subsection{Open Medical Data}
+Open medical data, also called open health data, is as the name already says medical data that is openly available and conforms the definition of open data. The main focus of our paper is on this kind of data. 
+
+\subsection{Data Ethics} 
+Data ethics is based on computer and information ethics, but the emphasis lies on the data and the complex ethical challenges that come with it. \cite{Floridi2016dataEthics}
+
+
+The term data ethics is often used in the context of large datasets, for example big data but also in context of open data in general. Data ethics deals with the study and evaluation of moral problems that can occur while working with data to help to find morally acceptable solutions. Furthermore, it also evaluates algorithms and other practices like programming and hacking that are also a part of the usage of data. \cite{Floridi2016dataEthics}
+
+Examples of ethical challenges are presented in Section \ref{sec:ethicalIssues}. 
+
+\subsection{De-identification}
+\begin{quote}
+    "De-identification of protected health information is an essential method for protecting patient privacy." \cite[p.\ 1044]{kayaalp2017modes}
+\end{quote}
+The goal of the process of de-identifying health data is that the person that the data belongs to cannot be identified through this data. In other words, the data is being anonymized. There exists a list of 18 identifiers that need to be removed and only if all of these identifiers are removed the data counts as "de-identified". Some examples of such identifiers are the name, the telephone number, the medical record numbers, biometric identifiers, etc.  \cite{kayaalp2017modes}\cite{Hoffman2015} 
+
+\section{Open Medical Data Sources}\label{sec:dataSources}
+TODO: find and write about websites and other places where open medical data can be obtained, also maybe where there would be good opportunity for it, but the data is not available
+
+\subsection{HealthData.gov}
+
+\subsection{GenBank}
+
+\subsection{PatientsLikeMe}
+
+\subsection{ELGA}
+
+\section{Importance of Open Medical Data}\label{sec:importance}
+
+Todo: provide short overview of importance of open medical data 
+
+One major importance and advantage of open medical data is that it can potentially lead to new scientific discoveries. For example through citizen scientists who would probably not otherwise have access to this kind of data but could potentially gain scientific insight from the data. \cite{Hoffman2015}
+Open medical data can also reduce the cost for research, since a lot of the same research is done by different researchers. This research is expensive and if the researchers could freely inspect other researchers' work, the amount of redundant research could be reduced. Furthermore, observational studies that look at existing data could be done by different researchers. It might also lead to smaller, less known medical problems being researched by scientists and citizen scientists. Because citizen scientists could be motivated by personal, not financial reasons. Small research project funded via crowd funding might also need a lot less funding to work, since it would not always be necessary to collect new data, when a lot of data is available. \cite{Hoffman2015}
+Open medical data is also a way to make governments more transparent and increase public education. Knowing what data the government collects and have insight into it could lead to debate about controversial data and therefore to change in the collection of this data. People could not only learn about their own health and conditions but also about the health care system and research. Also diseases and injuries as well as the costs of medical care. If some medical data where publicly available it could lead to improvements in substandard medical facilities. The data would also be available to the media, which would lead to political change. \cite{Hoffman2015}
+
+\section{Ethical Issues of Open Medical Data}\label{sec:ethicalIssues}
+Big Data as well as open medical data in healthcare is becoming more and more popular, it has the opportunity to improve our medical knowledge and with that our ability to help people that need medical attention. But with all of these possible benefits come possible ethical problems. Questions arise, such as who owns this data and who has control over this data? An example for the problems that can be encountered is care.data, a system introduced by the the United Kingdom's National Health Service (NHS). \cite{Kostkova_et_al_2016} The care.data use data from hospitals and link it with the general practice patient record system. The collected health data on the citizens of the United Kingdom will be used for research. Data.care is an oped-out system, that means if a citizen does not want their data to be analysed by data.care they will have to manually cancel the service. \cite{Hoeksmag2014}
+TODO: more about data.care 
+
+\subsection{Privacy and Law(suits)}
+One of the main concerns about open medical data is privacy. It is important that the privacy of the patient that the data belongs to is always ensured. One example of a project that has some privacy issues is mentioned by \citet{Hoffman2015} in her book. The Personal Genome Project for example has whole patient profiles on their website. \cite{ParticipantProfiles} Some of the profiles present not only the full name but also the gender, birthday, medical conditions and other private data. Anyone with access to the internet can potentially look at this data. But even the profiles that do not disclose names can probably be identified with relative ease, since a lot of personal data is given. Often the de-identification of data is done to not only uphold laws that prevent personal data of patients to be published but also to give people some privacy. But re-identification of data is often possible, which means there is no guarantee that de-identified data stays de-identified. \cite{Hoffman2015}\cite{ParticipantProfiles}
+
+TODO: discuss the law in austria and other countries
+
+TODO: discuss lawsuits that could occur
+\cite{Hoffman2015}
+
+\subsection{Discrimination}
+Another ethical issue that arises through opening up health data is that discrimination could happen. This could affect many different areas of life, for example in the world of employment or even in the financial area or advertising area. 
+
+The first major area where discrimination could appear is the work area. It is no secret that employers do research about their job applicants beforehand on the internet, on social networks, etc. to find out more about the person. However, with open medical data it could be also possible to check the health condition of the employee. Of course, employers want to have healthy employees and it could be possible that if the employer finds out that the employee has some health issues that they do not want to employ them because it is a risk for them. Another example of discrimination in this area could be that someone finds out that  a person has a sexually transmitted infection and even if the person is employed discrimination could appear at the workplace or the person could be bullied due to this knowledge. \citet{price2019privacy}
+
+Another area where discrimination due to open medical data could appear is the financial sector. Lenders for example could refuse loaning money to a person from whom they know that they are not as healthy because then the risk of not getting back the loan exists. The person is maybe at some point in time not able to work anymore due to the health issues and then is not able to pay off the loan. This is a huge risk for the lenders and therefore such discrimination could be a real problem. \citet{hoffman2016promise}
+
+Marketing and advertising is nowadays a huge topic and of course in this area open medical data can be also used in a discriminating way. 
+\begin{quote}
+    "Marketers may also engage in discriminatory practices, offering promotions and discounts to some customers but not others, or advertising selectively so that they reach only certain consumers." \cite[p.\ 1779]{Hoffman2015}
+\end{quote}
+With respect to this topic a popular case is often mentioned where a father figured out the pregnancy of his daughter through the mails his daughter got from the shop Target. \cite{targetPregnantDaughter}
+
+Such discrimination is of course illegal but difficult to prove. 
+The problem of possible re-identification as discussed previously shows that it is not unrealistic that the data, even though published de-identified might be re-identified. \cite{Hoffman2015}
+
+\subsection{Spreading of incorrect research}
+\cite{Hoffman2015}
+
+
+TODO: find out why it was canceled in 2016 & write about it
+TODO: ELGA (austria) ?
+
+
+TODO: write what they say
+\cite{Vayena_et_al2015} 
+
+TODO: write what they say
+\cite{Fairchild631}
+
+\section{Conclusion}\label{sec:conclusion}
+TODO: conclusion
+
+%-----------------------------------------------------------------------------------------
+
+% To ensure best compatibility with version control (e.g.\ git), it is best to write one sentence per line and configure your editor not to hard-break lines.
+% For citations use \cite{BakSchaLewRotBla11} or \cite[p.\ 6--8]{BakSchaLewRotBla11}.
+% For quotes use, for example,
+% \begin{quote}
+% 	``This is a proper quote.'' \cite[p.\ 6]{BakSchaLewRotBla11}
+% \end{quote}
+
+
+% References section.
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+% Delete sentence with emails if you don't want to be contacted.
+\paragraph{About this document.} This seminar paper was written as part of the lecture \emph{Free and Open Technologies}, held by Christoph Derndorfer and Lukas~F.\ Lang at TU Wien, Austria, during the winter term 2019/2020.
+All selected papers can be found online.\footnote{\url{https://free-and-open-technologies.github.io}}
+
+% Add CC license.
+\doclicenseThis
+
+\end{document}
