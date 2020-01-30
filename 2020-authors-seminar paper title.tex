@@ -42,6 +42,9 @@
 
 
 \begin{abstract}
+
+% TODO
+
 \end{abstract}
 
 \section{Introduction} \label{sec:intro}
@@ -52,7 +55,7 @@ There is a huge potential of the already existing amount of medical data that is
 We start our paper by providing first some general information and definitions of the topic related areas in Section \ref{sec:definitions}. We will continue by presenting some publicly available data sources of medical data in Section \ref{sec:dataSources}. Afterward, the potential and importance of open medical data is shortly discussed in Section \ref{sec:importance}. Finally, some of the ethical issues that need to be considered when dealing with open medical data are presented in Section \ref{sec:ethicalIssues} and then we sum up our results in Section \ref{sec:conclusion}.
 
 \section{Definitions}\label{sec:definitions}
-In this section, we provide some general information and definitions of the topic related areas like Open Data, Data Ethics, Big Health Data and Open Medical Data. 
+In this section, we provide some general information and definitions of the topic related areas like Open Data, Data Ethics, Big Health Data, Open Medical Data, etc. 
 
 \subsection{Open Data}
 \begin{quote}
@@ -65,7 +68,7 @@ The last very important aspect is that the data needs to be accessible for every
 Something also important regarding "open data" is that there exists a movement, called "open data movement" that goal is to open up data and to provide tools that make the analysis of the data easier. Because sometimes even if data is freely available the data is so complex that special tools or software is needed to be able to analyse it. \cite{kitchin2014dataRevolution}
 
 \subsection{Big Health Data}
-Big health data means the sum of all the data that is produced, gathered and electronically stored during the daily routines of modern health care systems as well as health data that is collected by wearable devices regardless if it is open or not. There is a high potential of improving patient care with this huge amount of data but currently there is a lack of tools that are able to properly handle the data. \cite{schneeweiss2014learning} \cite{Kostkova_et_al_2016}
+Big health data means the sum of all the data that is produced, gathered and electronically stored during the daily routines of modern health care systems as well as health data that is collected by wearable devices regardless if it is open or not. There is a high potential of improving patient care with this huge amount of data but currently there is a lack of tools that are able to properly handle the data. \cite{schneeweiss2014learning, Kostkova_et_al_2016}
 
 \subsection{Open Medical Data}
 Open medical data, also called open health data, is as the name already says medical data that is openly available and conforms the definition of open data. The main focus of our paper is on this kind of data. 
@@ -82,10 +85,11 @@ Examples of ethical challenges are presented in Section \ref{sec:ethicalIssues}.
 \begin{quote}
     "De-identification of protected health information is an essential method for protecting patient privacy." \cite[p.\ 1044]{kayaalp2017modes}
 \end{quote}
-The goal of the process of de-identifying health data is that the person that the data belongs to cannot be identified through this data. In other words, the data is being anonymized. There exists a list of 18 identifiers that need to be removed and only if all of these identifiers are removed the data counts as "de-identified". Some examples of such identifiers are the name, the telephone number, the medical record numbers, biometric identifiers, etc.  \cite{kayaalp2017modes}\cite{Hoffman2015} 
+The goal of the process of de-identifying health data is that the person that the data belongs to cannot be identified through this data. In other words, the data is being anonymized. There exists a list of 18 identifiers that need to be removed and only if all of these identifiers are removed the data counts as "de-identified". Some examples of such identifiers are the name, the telephone number, the medical record numbers, biometric identifiers, etc.  \cite{kayaalp2017modes, Hoffman2015} 
 
 \section{Open Medical Data Sources}\label{sec:dataSources}
-TODO: find and write about websites and other places where open medical data can be obtained, also maybe where there would be good opportunity for it, but the data is not available
+%TODO: find and write about websites and other places where open medical data can be obtained, also maybe where there would be good opportunity for it, but the data is not available
+In this section we provide a short overview of some existing medical data sources. Not all of them are fully open according to the open data definition but we will explain this further for each database. 
 
 \subsection{HealthData.gov}
 
@@ -97,7 +101,7 @@ TODO: find and write about websites and other places where open medical data can
 
 \section{Importance of Open Medical Data}\label{sec:importance}
 
-Todo: provide short overview of importance of open medical data 
+%Todo: provide short overview of importance of open medical data 
 
 One major importance and advantage of open medical data is that it can potentially lead to new scientific discoveries. For example through citizen scientists who would probably not otherwise have access to this kind of data but could potentially gain scientific insight from the data. \cite{Hoffman2015}
 Open medical data can also reduce the cost for research, since a lot of the same research is done by different researchers. This research is expensive and if the researchers could freely inspect other researchers' work, the amount of redundant research could be reduced. Furthermore, observational studies that look at existing data could be done by different researchers. It might also lead to smaller, less known medical problems being researched by scientists and citizen scientists. Because citizen scientists could be motivated by personal, not financial reasons. Small research project funded via crowd funding might also need a lot less funding to work, since it would not always be necessary to collect new data, when a lot of data is available. \cite{Hoffman2015}
@@ -108,7 +112,7 @@ Big Data as well as open medical data in healthcare is becoming more and more po
 TODO: more about data.care 
 
 \subsection{Privacy and Law(suits)}
-One of the main concerns about open medical data is privacy. It is important that the privacy of the patient that the data belongs to is always ensured. One example of a project that has some privacy issues is mentioned by \citet{Hoffman2015} in her book. The Personal Genome Project for example has whole patient profiles on their website. \cite{ParticipantProfiles} Some of the profiles present not only the full name but also the gender, birthday, medical conditions and other private data. Anyone with access to the internet can potentially look at this data. But even the profiles that do not disclose names can probably be identified with relative ease, since a lot of personal data is given. Often the de-identification of data is done to not only uphold laws that prevent personal data of patients to be published but also to give people some privacy. But re-identification of data is often possible, which means there is no guarantee that de-identified data stays de-identified. \cite{Hoffman2015}\cite{ParticipantProfiles}
+One of the main concerns about open medical data is privacy. It is important that the privacy of the patient that the data belongs to is always ensured. One example of a project that has some privacy issues is mentioned by \citet{Hoffman2015} in her book. The Personal Genome Project for example has whole patient profiles on their website. \cite{ParticipantProfiles} Some of the profiles present not only the full name but also the gender, birthday, medical conditions and other private data. Anyone with access to the internet can potentially look at this data. But even the profiles that do not disclose names can probably be identified with relative ease, since a lot of personal data is given. Often the de-identification of data is done to not only uphold laws that prevent personal data of patients to be published but also to give people some privacy. But re-identification of data is often possible, which means there is no guarantee that de-identified data stays de-identified. \cite{Hoffman2015, ParticipantProfiles}
 
 TODO: discuss the law in austria and other countries
 
@@ -118,18 +122,20 @@ TODO: discuss lawsuits that could occur
 \subsection{Discrimination}
 Another ethical issue that arises through opening up health data is that discrimination could happen. This could affect many different areas of life, for example in the world of employment or even in the financial area or advertising area. 
 
-The first major area where discrimination could appear is the work area. It is no secret that employers do research about their job applicants beforehand on the internet, on social networks, etc. to find out more about the person. However, with open medical data it could be also possible to check the health condition of the employee. Of course, employers want to have healthy employees and it could be possible that if the employer finds out that the employee has some health issues that they do not want to employ them because it is a risk for them. Another example of discrimination in this area could be that someone finds out that  a person has a sexually transmitted infection and even if the person is employed discrimination could appear at the workplace or the person could be bullied due to this knowledge. \citet{price2019privacy}
+The first major area where discrimination could appear is the work area. It is no secret that employers do research about their job applicants beforehand on the internet, on social networks, etc. to find out more about the person. However, with open medical data it could be also possible to check the health condition of the employee. Of course, employers want to have healthy employees and it could be possible that if the employer finds out that the employee has some health issues that they do not want to employ them because it is a risk for them. Another example of discrimination in this area could be that someone finds out that  a person has a sexually transmitted infection and even if the person is employed discrimination could appear at the workplace or the person could be bullied due to this knowledge. \cite{price2019privacy}
 
-Another area where discrimination due to open medical data could appear is the financial sector. Lenders for example could refuse loaning money to a person from whom they know that they are not as healthy because then the risk of not getting back the loan exists. The person is maybe at some point in time not able to work anymore due to the health issues and then is not able to pay off the loan. This is a huge risk for the lenders and therefore such discrimination could be a real problem. \citet{hoffman2016promise}
+Another area where discrimination due to open medical data could appear is the financial sector. Lenders for example could refuse loaning money to a person from whom they know that they are not as healthy because then the risk of not getting back the loan exists. The person is maybe at some point in time not able to work anymore due to the health issues and then is not able to pay off the loan. This is a huge risk for the lenders and therefore such discrimination could be a real problem. \cite{hoffman2016promise}
 
 Marketing and advertising is nowadays a huge topic and of course in this area open medical data can be also used in a discriminating way. 
 \begin{quote}
     "Marketers may also engage in discriminatory practices, offering promotions and discounts to some customers but not others, or advertising selectively so that they reach only certain consumers." \cite[p.\ 1779]{Hoffman2015}
 \end{quote}
-With respect to this topic a popular case is often mentioned where a father figured out the pregnancy of his daughter through the mails his daughter got from the shop Target. \cite{targetPregnantDaughter}
+With respect to this topic a popular case is often mentioned where a father figured out the pregnancy of his teen daughter through the mails his daughter got from the shop "Target". \cite{targetPregnantDaughter}
+Although in this example open medical data was not directly used because the fact that the daughter was pregnant was maintained through many different data that was gathered from Target it is an important case. Because the pregnancy itself was a very sensitive medical information regardless how Target figured it out. Such information could then be much easier obtained. 
 
-Such discrimination is of course illegal but difficult to prove. 
+These were only some examples of possible discrimination that could happen when opening up medical data. Of course, such discriminations are illegal but difficult to prove. 
 The problem of possible re-identification as discussed previously shows that it is not unrealistic that the data, even though published de-identified might be re-identified. \cite{Hoffman2015}
+
 
 \subsection{Spreading of incorrect research}
 \cite{Hoffman2015}
